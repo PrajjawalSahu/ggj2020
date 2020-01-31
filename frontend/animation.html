@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        animation
+    </title>
+    <style>
+        div {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            height: 100px;
+            width: 100px;
+            background-color: goldenrod;
+        }
+    </style>
+   
+
+</head>
+
+<body>
+    <div id="block"></div>
+
+    <script>
+        function myMove() {
+            var elem = document.getElementById("block");
+            var pos = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                }
+            }
+        }
+        myMove();
+    </script>
+    </body>
+
+</html>
