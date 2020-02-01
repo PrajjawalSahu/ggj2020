@@ -5,38 +5,46 @@
         animation
     </title>
     <style>
-        div {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            height: 100px;
-            width: 100px;
-            background-color: goldenrod;
+        body {
+            background-color: black;
+            position: relative;
         }
+
+       
+        #blocks{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        .block{ top: 50px;
+               left: 10px;  
+               width: 100px;
+               position: relative;
+            height: 100px;
+            background-color: goldenrod;}
+        /* .block:second-child{ top: 50px;
+            left: 150px;
+        background-color: cornflowerblue;} */
     </style>
-   
+
 
 </head>
 
 <body>
-    <div id="block"></div>
+    <!-- <div id="blocks"> </div> -->
+<div id="blocks">
+    <div class="block"></div>
+    <div class="block"></div>
 
-    <script>
-        function myMove() {
-            var elem = document.getElementById("block");
-            var pos = 0;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (pos == 350) {
-                    clearInterval(id);
-                } else {
-                    pos++;
-                    elem.style.top = pos + 'px';
-                }
-            }
-        }
-        myMove();
-    </script>
-    </body>
+    <div class="block"></div>
+    <div class="block"></div>
+</div>
+
+    <script src="./animation.js"></script>
+
+</body>
 
 </html>
