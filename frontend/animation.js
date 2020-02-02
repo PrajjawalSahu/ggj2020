@@ -3,18 +3,18 @@ function removeElement(element) {
     element.parentNode.removeChild(element);
 }
 
-function myMove( char) {
+function myMove() {
     let element = document.createElement('div');
     element.id = 'block';
     document.getElementsByTagName("body")[0].appendChild(element);
     let div = document.getElementById('block');
-    div.innerHTML += char;
+    div.innerHTML += 'p';
     let pos = 0;
     let id = setInterval(function(){
         frame(element)
     }, 25);
     document.addEventListener("keypress", function (event) {
-        if (event.keyCode== char.charCodeAt(0)) {
+        if (event.keyCode==112 ) {
            
             let element = document.getElementById("block");
             element.parentNode.removeChild(element);
@@ -42,18 +42,18 @@ setTimeout(myMove, 2000);
 
 
 
-function myMove1(char) {
+function myMove1() {
     let element = document.createElement('div');
     element.id = 'block1';
     document.getElementsByTagName("body")[0].appendChild(element);
     let div = document.getElementById('block1');
-    div.innerHTML += char;
+    div.innerHTML += 'R';
     let pos = 0;
     let id = setInterval(function(){
         frame(element)
     }, 25);
     document.addEventListener("keypress", function (event) {
-        if (event.keyCode == char.charCodeAt(0) ) {
+        if (event.keyCode == 82 ) {
             
             let element = document.getElementById("block1");
             element.parentNode.removeChild(element);
@@ -82,18 +82,18 @@ setTimeout(myMove1, 5000);
 
 
 
-function myMove2(char) {
+function myMove2() {
     let element = document.createElement('div');
     element.id = 'block2';
     document.getElementsByTagName("body")[0].appendChild(element);
     let div = document.getElementById('block2');
-    div.innerHTML += char;
+    div.innerHTML += 'A';
     let pos = 0;
     let id = setInterval(function(){
         frame(element)
     }, 25);
     document.addEventListener("keypress", function (event) {
-        if (event.keyCode== char.charCodeAt(0)) {
+        if (event.keyCode== 65) {
       
             let element = document.getElementById("block2");
             element.parentNode.removeChild(element);
@@ -123,18 +123,18 @@ setTimeout(myMove2, 3500);
 
 
 
-function myMove3(char) {
+function myMove3() {
     let element = document.createElement('div');
     element.id = 'block3';
     document.getElementsByTagName("body")[0].appendChild(element);
     let div = document.getElementById('block3');
-    div.innerHTML += char;
+    div.innerHTML += 's';
     let pos = 0;
     let id = setInterval(function(){
         frame(element)
     }, 25);
     document.addEventListener("keypress", function (event) {
-        if (event.keyCode== char.charCodeAt(0)) {
+        if (event.keyCode== 115) {
             
             let element = document.getElementById("block3");
             element.parentNode.removeChild(element);
@@ -199,18 +199,18 @@ setTimeout(myMove4, 10000);
 
 
 
-function myMove5(char) {
+function myMove5() {
     let element = document.createElement('div');
     element.id = 'block5';
     document.getElementsByTagName("body")[0].appendChild(element);
     let div = document.getElementById('block5');
-    div.innerHTML += char;
+    div.innerHTML += 'q';
     let pos = 0;
     let id = setInterval(function(){
         frame(element)
     }, 25);
     document.addEventListener("keypress", function (event) {
-        if (event.keyCode== char.charCodeAt(0)) {
+        if (event.keyCode== 113) {
             
             let element = document.getElementById("block5");
             element.parentNode.removeChild(element);
