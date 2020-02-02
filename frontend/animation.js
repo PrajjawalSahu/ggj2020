@@ -20,6 +20,10 @@ function myMove( char) {
             element.parentNode.removeChild(element);
             clearInterval(id);
         }
+        else{
+            var video = document.getElementById('video1');
+           video.currentTime =0;
+        }
     });
 
 
@@ -157,15 +161,6 @@ setTimeout(myMove3, 6500);
 
 
 
-
-
-
-
-
-
-
-
-
 function myMove4() {
     let element = document.createElement('div');
     element.id = 'block4';
@@ -174,7 +169,7 @@ function myMove4() {
     div.innerHTML += "YOU REPAIR";
     let pos = 0;
     let id = setInterval(function(){
-        frame(element)
+        frame(element) 
     }, 25);
     // document.addEventListener("keypress", function (event) {
     //     if (event.keyCode== char.charCodeAt(0)) {
@@ -198,9 +193,6 @@ function myMove4() {
 }
 
 setTimeout(myMove4, 10000);
-
-
-
 
 
 
@@ -240,3 +232,8 @@ function myMove5(char) {
 }
 
 setTimeout(myMove5, 7000);
+
+
+
+
+
