@@ -59,6 +59,9 @@ function myMove1() {
             element.parentNode.removeChild(element);
             clearInterval(id);
 
+        }  else{
+            var video = document.getElementById('video1');
+           video.currentTime =0;
         }
     });
 
@@ -99,6 +102,9 @@ function myMove2() {
             element.parentNode.removeChild(element);
             clearInterval(id);
 
+        }  else{
+            var video = document.getElementById('video1');
+           video.currentTime =0;
         }
     });
 
@@ -140,6 +146,9 @@ function myMove3() {
             element.parentNode.removeChild(element);
             clearInterval(id);
 
+        }  else{
+            var video = document.getElementById('video1');
+           video.currentTime =0;
         }
     });
 
@@ -216,6 +225,9 @@ function myMove5() {
             element.parentNode.removeChild(element);
             clearInterval(id);
 
+        }  else{
+            var video = document.getElementById('video1');
+           video.currentTime =0;
         }
     });
 
